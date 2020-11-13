@@ -1,0 +1,65 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://thotlessclothing.ddns.net/stylesheet.css">
+</head>
+
+<!--
+  <video id="myVideo" width="320" height="176" controls="controls">
+    <source src="C:\Users\Fallo\Videos\videos\totebot head alarm.mp4" type="video/mp4">
+    <source src="C:\Users\Fallo\Desktop\test.mp3" type="video/mp3">
+    Your browser does not support HTML5 video.
+  </video>
+-->
+
+<title>Demon slayer</title>
+
+<video id="videoPlayer" autoplay autobuffer controls></video>
+
+<script>
+var videoPlayer = document.getElementById('videoPlayer')
+
+var vArray = [
+    "EP.1.mp4",
+    "EP.2.mp4",
+    "EP.3.mp4",
+    "EP.4.mp4",
+    "EP.5.mp4",
+    "EP.6.mp4",
+    "EP.7.mp4",
+    "EP.8.mp4",
+    "EP.9.mp4",
+    "EP.10.mp4",
+    "EP.11.mp4",
+    "EP.12.mp4",
+    "EP.13.mp4",
+    "EP.14.mp4",
+    "EP.15.mp4",
+    "EP.16.mp4",
+    "EP.17.mp4",
+    "EP.18.mp4",
+    "EP.19.mp4",
+    "EP.20.mp4",
+    "EP.21.mp4",
+    "EP.22.mp4",
+    "EP.23.mp4",
+    "EP.24.mp4",
+    "EP.25.mp4",
+    "EP.26.mp4",
+
+]
+
+videoPlayer.src = vArray[0]
+
+i = 1
+videoPlayer.onended = function(){
+    if (i < vArray.length) {
+        videoPlayer.src = vArray[i]
+       i++
+    }
+}
+</script>
+
+</head>
+</html>
